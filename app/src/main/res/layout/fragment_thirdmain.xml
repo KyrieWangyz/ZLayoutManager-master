@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+
+        android:layout_centerHorizontal="true"
+        android:id="@+id/mid_linear"
+        android:layout_width="320dp"
+        android:layout_height="85dp"
+
+        android:orientation="horizontal">
+        <View
+            android:layout_width="23dp"
+            android:layout_height="wrap_content"
+            />
+        <RelativeLayout
+
+            android:id="@+id/recommand_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:id="@+id/recommand_picture"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/recommand_picture"
+
+                android:id="@+id/recommand_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="训练栏"
+                android:textSize="15dp"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+        <RelativeLayout
+            android:id="@+id/search_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <ImageView
+                android:layout_marginTop="11dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/search_picture"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/search_picture"
+
+                android:id="@+id/search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="补剂"
+                android:textSize="15dp"/>
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="23dp"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+
+<android.support.v4.view.ViewPager
+    android:layout_below="@+id/mid_linear"
+    android:id="@+id/viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</RelativeLayout>

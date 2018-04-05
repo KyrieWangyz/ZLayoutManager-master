@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginBottom="15dp"
+    android:background="@color/pointColor"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="110dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        android:text="教练id"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/coachid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:text="学员id"
+        android:id="@+id/memberid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:text="时间点"
+        android:id="@+id/schooltime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/time"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:text="日期"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_margin="15dp"
+        android:layout_gravity="center_horizontal"
+        android:text="取消"
+        android:textSize="28sp"
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

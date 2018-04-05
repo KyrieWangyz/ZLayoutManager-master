@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/rollpagerview"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+
+        />
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+<LinearLayout
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/search"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/message"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+android:id="@+id/collection"
+        android:src="@mipmap/ic_launcher"
+        android:layout_weight="1"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+    <ImageView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="6dp"
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#66CCFF"
+        />
+        <!--android:visibility="gone"-->
+        />
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/pic8"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:text="吾量健身房
+        sdbasdbaskjdbajkfbdsfjkasdbsdjhfbsdjhbfsjhfbs
+        刷等级回复时间的方式
+        是大家好发的发顺丰还是比较啊
+继续写些东西
+还可以再多些，
+再填充些花样"
+        android:textSize="25sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</ScrollView>

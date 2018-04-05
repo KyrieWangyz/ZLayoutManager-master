@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:background="@drawable/coach_background"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/headPic"
+            android:text="这个而是id"
+            android:textSize="22sp"
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:layout_below="@+id/id"
+            android:text="教练的名字"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/adpet"
+            android:text="擅长"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:textSize="22sp"
+            android:layout_below="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="教练详细信息"
+            android:textSize="22sp"
+            android:layout_below="@+id/adpet"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/detailMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="22sp"
+            android:layout_below="@+id/detailMsg"
+            android:id="@+id/sex"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="性别"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/motto"
+            android:text="座右铭是什么"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/sex"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/schooltime"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text="具体上课的时间是"
+            android:layout_below="@+id/motto"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/appointment"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/schooltime"
+            android:layout_centerHorizontal="true"
+            android:text="预约"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_centerHorizontal="true"
+            xmlns:circleimageview="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/headPic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+
+            android:src="@drawable/tarinimg"
+            circleimageview:civ_border_color="@android:color/holo_red_light"
+            circleimageview:civ_border_overlay="false"
+            circleimageview:civ_border_width="2dp"
+            circleimageview:civ_fill_color="@android:color/holo_blue_light" />
+        
+    </RelativeLayout>
+
+</ScrollView>

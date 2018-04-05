@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.mcxtzhang.flowlayoutmanager">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />//开机启动app的广播权限
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>//相机读写的权限
+
+
+
+
+
+
+    <application
+        android:name=".MvpApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        //BootReceiver是上面建的广播类
+        <receiver android:name=".MyProject.MyProject.Broadcast.BootReceiver">
+            <intent-filter>
+                <!--注册开机广播地址-->
+                <action android:name="android.intent.action.BOOT_COMPLETED">
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".activity.CoachActivity">
+
+        </activity>
+
+
+        <activity android:name=".MainActivity">
+        </activity>
+        <activity android:name=".activity.MyAppointmentActivity"></activity>
+        <activity android:name=".Rili.TestFragmentActivity">
+
+
+        </activity>
+        <activity android:name=".activity.VipOrderCoachActivity"></activity>
+        <activity android:name=".activity.Select1Activity">//////////////////////////////////////////登陆就是这个activity
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.CollectCoachActivity">
+
+        </activity>
+
+        <activity android:name=".MyProject.MyProject.Test.CoachResgisterActivity">
+
+        </activity>
+<activity android:name=".activity.SelectActivity">
+
+</activity>
+        <activity android:name=".MyProject.MyProject.Test.MainActivity">
+
+
+
+
+        </activity>
+
+       <!--<activity android:name=".MyProject.MyProject.LeakTest.MainActivity">//用来检测内存泄漏的一个测试activity-->
+          <!---->
+       <!--</activity>-->
+
+
+        <activity android:name=".activity.ViploginActivity"></activity>
+        <activity android:name=".activity.CoachloginActivity"></activity>
+
+        <activity android:name=".MyProject.MyProject.Test.TestActivity">
+
+
+        </activity>
+        <activity android:name=".activity.VipregisterActivity">
+
+        </activity>
+<activity android:name=".MyProject.MyProject.HomeCoachActivity">
+
+
+</activity>
+
+
+        <activity android:name=".MyProject.MyProject.HomeActivity">
+
+
+        </activity>
+
+        <activity android:name=".LauncherActivity">
+
+        </activity>
+        <activity android:name=".swipecard.SwipeCardActivity">
+        </activity>
+        <activity android:name=".tantan.TanTanActivity">
+
+        </activity>
+        <activity android:name=".gallary.GalleryActivity">
+        </activity>
+        <activity
+            android:name=".zuimei.ScaleCardActivity"
+            android:theme="@style/NoTitle">
+        </activity>
+        <activity android:name=".avatar.TanTanAvatarActivity">
+        </activity>
+        <activity android:name=".gallery.LoopGalleryActivity"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,1 @@
+include ':app', ':layoutmanager', ':mylibrary', ':ncalendar1'

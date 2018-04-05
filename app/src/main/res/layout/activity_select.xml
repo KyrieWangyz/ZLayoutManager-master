@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<Button
+    android:layout_centerHorizontal="true"
+    android:layout_margin="50dp"
+    android:textSize="25dp"
+    android:text="会员"
+    android:id="@+id/vip"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+    <Button
+        android:layout_below="@+id/vip"
+        android:text="教练"
+        android:textSize="25dp"
+        android:id="@+id/coach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectImage"
+        android:layout_centerHorizontal="true"
+
+        android:text="提交" />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        android:text="请选择图片"
+        android:id="@+id/selectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/adpet"
+        android:hint="你的专长"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/adpet"
+        android:id="@+id/detailMsg"
+        android:hint="详细信息"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/yourname"
+        android:layout_below="@+id/detailMsg"
+        android:hint="你的名字"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/schooltime"
+        android:hint="上课时间"
+        android:layout_below="@+id/yourname"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/sex"
+        android:hint="性别"
+        android:layout_below="@+id/schooltime"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:id="@+id/motto"
+        android:hint="座右铭"
+        android:layout_below="@+id/sex"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_below="@+id/motto"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView"
+        android:layout_width="66dp"
+        android:layout_height="66dp" />
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/describe"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:hint="具体动作"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/parts"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:hint="部位"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <Button
+        android:id="@+id/selectImage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="选择图片" />
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加该动作" />
+
+</LinearLayout>

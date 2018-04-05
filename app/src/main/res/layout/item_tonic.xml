@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/pic8"
+        android:id="@+id/pic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pic"
+        android:textSize="22sp"
+        android:text="id号"
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+
+        android:maxWidth="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/id"
+        android:id="@+id/name"
+        android:text="补给名"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:ellipsize="end"
+        android:maxEms="7"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/name"
+        android:maxWidth="100dp"
+        android:textSize="20sp"
+        android:text="这里填的是补给的功效，一些作用啊什么的"
+        android:id="@+id/effect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:ellipsize="end"
+        android:maxEms="6"
+        android:text="这里填写的是各种使用方法"
+        android:textSize="18dp"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/effect"
+        android:id="@+id/eatMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

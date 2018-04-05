@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="110dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="30sp"
+        android:text="id号"
+        android:id="@+id/id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/tonicPic"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/id"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:ellipsize="end"
+        android:maxEms="25"
+
+
+
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name"
+        android:id="@+id/effect"
+        android:text="功效:bilibalanasdjsanfkadjsfhksdjfhdskgljhskgajhgluhgleuhlw"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/tonicPic"
+        android:maxWidth="100dp"
+        android:textSize="20sp"
+        android:text="名字"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:maxWidth="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="食用方法:basfkjsdfhdskjfhdslkfajhdskfljshfkdsjhflsk"
+        android:id="@+id/eatMethod"
+        android:layout_below="@+id/effect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
